@@ -1,8 +1,8 @@
 package lesson1;
 
-class task{
+class Task {
     public static void main(String[] args) {
-        menu menu = new menu();
+        Menu menu = new Menu();
         menu.mainMenu();
     }
 }

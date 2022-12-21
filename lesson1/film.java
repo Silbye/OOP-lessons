@@ -1,6 +1,6 @@
 package lesson1;
 
-public class film {
+public class Film {
     String name;
     String director;
     String releaseYear;
@@ -10,22 +10,25 @@ public class film {
     String country;
     String studio;
 
-    logic log = new logic();
+    Logic logic = new Logic();
 
-    film(){
-        this.name = log.getName();
-        this.releaseYear = log.getYear();
-        this.genre = log.getGenre();
-        this.budget = log.getBudget();
-        this.boxOffice = log.getBox();
-        this.country = log.getCountry();
-        this.studio = log.getStudio();
-        this.director = log.getDirector();
+    Film() {
+        this.name = logic.getName();
+        this.releaseYear = logic.getYear();
+        this.genre = logic.getGenre();
+        this.budget = logic.getBudget();
+        this.boxOffice = logic.getBox();
+        this.country = logic.getCountry();
+        this.studio = logic.getStudio();
+        this.director = logic.getDirector();
     }
 
-    public String info(){
+    public String info() {
         StringBuilder sb = new StringBuilder();
-        return sb.append(String.format("===============================\nName: %s\nYear: %s\nCountry: %s\nStudio: %s\nGenre: %s\nDirector: %s\nBudget: "+
-        "%s$\nBox Office: %s$\n===============================\n", name, releaseYear, country, studio, genre, director, budget, boxOffice)).toString();
+        return sb.append(String.format(
+                "===============================\nName: %s\nYear: %s\nCountry: %s\nStudio: %s\nGenre: %s\nDirector: %s\nBudget: "
+                        +
+                        "%s$\nBox Office: %s$\n===============================\n",
+                name, releaseYear, country, studio, genre, director, budget, boxOffice)).toString();
     }
 }
