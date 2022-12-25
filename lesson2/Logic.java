@@ -12,12 +12,12 @@ public class Logic {
 
         Human[] people = new Human[] { firstHuman, secondHuman, thirdHuman, fourthHuman, fifthHuman };
 
-        firstHuman.addRelatives(new int[] { 1, 2, 3, 4 },
+        firstHuman.setRelatives(new int[] { 1, 2, 3, 4 },
                 new String[] { "Parent", "Grandparent", "Parent", "Grandparent" });
-        secondHuman.addRelatives(new int[] { 0, 2, 3 }, new String[] { "Child", "Parent", "Spouse" });
-        thirdHuman.addRelatives(new int[] { 0, 1 }, new String[] { "Grandchild", "Child" });
-        fourthHuman.addRelatives(new int[] { 0, 1, 4 }, new String[] { "Child", "Spouse", "Parent" });
-        fifthHuman.addRelatives(new int[] { 0, 3 }, new String[] { "Grandchild", "Child" });
+        secondHuman.setRelatives(new int[] { 0, 2, 3 }, new String[] { "Child", "Parent", "Spouse" });
+        thirdHuman.setRelatives(new int[] { 0, 1 }, new String[] { "Grandchild", "Child" });
+        fourthHuman.setRelatives(new int[] { 0, 1, 4 }, new String[] { "Child", "Spouse", "Parent" });
+        fifthHuman.setRelatives(new int[] { 0, 3 }, new String[] { "Grandchild", "Child" });
 
         System.out.println("Database loaded!");
 
@@ -40,11 +40,11 @@ public class Logic {
         } else {
             for (Human object : people) {
                 object.info();
-                for (Map.Entry<Integer, String> entry : object.relations.entrySet()) {
+                for (Map.Entry<Integer, String> entry : object.getRelations().entrySet()) {
                     int argId = entry.getKey();
                     String argRelation = entry.getValue();
-                    Relative relative = new Relative(argId, people[argId].fullName, people[argId].age,
-                            people[argId].nationality, people[argId].gender, argRelation);
+                    Relative relative = new Relative(argId, people[argId].getFullName(), people[argId].getAge(),
+                            people[argId].getNationality(), people[argId].getGender(), argRelation);
                     relative.info();
                 }
             }
@@ -58,12 +58,12 @@ public class Logic {
             for (Human object : people) {
                 object.info();
                 boolean hasChildren = false;
-                for (Map.Entry<Integer, String> entry : object.relations.entrySet()) {
+                for (Map.Entry<Integer, String> entry : object.getRelations().entrySet()) {
                     int argId = entry.getKey();
                     String argRelation = entry.getValue();
                     if (argRelation.equals("Child")) {
-                        Relative relative = new Relative(argId, people[argId].fullName, people[argId].age,
-                                people[argId].nationality, people[argId].gender, argRelation);
+                        Relative relative = new Relative(argId, people[argId].getFullName(), people[argId].getAge(),
+                                people[argId].getNationality(), people[argId].getGender(), argRelation);
                         relative.info();
                         hasChildren = true;
                     } else {
