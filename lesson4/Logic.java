@@ -40,10 +40,9 @@ public class Logic {
         int row[] = { -1, 0, 0, 1 };
         int col[] = { 0, -1, 1, 0 };
 
-        if(matrix[i][j] == 0){
+        if (matrix[i][j] == 0) {
             System.out.println("Starting point is a wall!");
-        }
-        else{
+        } else {
             boolean[][] visited = new boolean[matrix.length][matrix[i].length];
             Queue<Node> q = new LinkedList<Node>();
             visited[i][j] = true;
@@ -58,7 +57,7 @@ public class Logic {
                     minimum_distance = dist;
                     break;
                 }
-    
+
                 for (int k = 0; k < 4; k++) {
                     if (isValid(matrix, visited, i + row[k], j + col[k])) {
                         visited[i + row[k]][j + col[k]] = true;
@@ -67,12 +66,12 @@ public class Logic {
                     }
                 }
             }
-    
+
             if (minimum_distance == Integer.MAX_VALUE) {
                 System.out.print("Destination cannot be reached");
             } else {
                 System.out.print("The shortest path has length " + minimum_distance);
             }
-        }  
+        }
     }
 }
