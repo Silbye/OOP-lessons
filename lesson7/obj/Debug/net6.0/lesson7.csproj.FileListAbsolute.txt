@@ -1,0 +1,17 @@
+C:\Users\silve\Desktop\OOP\lesson7\bin\Debug\net6.0\lesson7.exe
+C:\Users\silve\Desktop\OOP\lesson7\bin\Debug\net6.0\lesson7.deps.json
+C:\Users\silve\Desktop\OOP\lesson7\bin\Debug\net6.0\lesson7.runtimeconfig.json
+C:\Users\silve\Desktop\OOP\lesson7\bin\Debug\net6.0\lesson7.dll
+C:\Users\silve\Desktop\OOP\lesson7\bin\Debug\net6.0\lesson7.pdb
+C:\Users\silve\Desktop\OOP\lesson7\obj\Debug\net6.0\lesson7.csproj.AssemblyReference.cache
+C:\Users\silve\Desktop\OOP\lesson7\obj\Debug\net6.0\lesson7.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\silve\Desktop\OOP\lesson7\obj\Debug\net6.0\lesson7.AssemblyInfoInputs.cache
+C:\Users\silve\Desktop\OOP\lesson7\obj\Debug\net6.0\lesson7.AssemblyInfo.cs
+C:\Users\silve\Desktop\OOP\lesson7\obj\Debug\net6.0\lesson7.csproj.CoreCompileInputs.cache
+C:\Users\silve\Desktop\OOP\lesson7\obj\Debug\net6.0\lesson7.dll
+C:\Users\silve\Desktop\OOP\lesson7\obj\Debug\net6.0\refint\lesson7.dll
+C:\Users\silve\Desktop\OOP\lesson7\obj\Debug\net6.0\lesson7.pdb
+C:\Users\silve\Desktop\OOP\lesson7\obj\Debug\net6.0\lesson7.genruntimeconfig.cache
+C:\Users\silve\Desktop\OOP\lesson7\obj\Debug\net6.0\ref\lesson7.dll
+C:\Users\silve\Desktop\OOP\lesson7\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\silve\Desktop\OOP\lesson7\obj\Debug\net6.0\lesson7.csproj.CopyComplete
